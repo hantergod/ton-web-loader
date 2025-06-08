@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Cases by TON</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #141414;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 1.4rem;
+      margin-bottom: 5px;
+    }
+
+    .copyright {
+      font-size: 0.9rem;
+      color: #aaaaaa;
+      margin-bottom: 40px;
+    }
+
+    .loader {
+      border: 6px solid #333;
+      border-top: 6px solid #1ab6ff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 2s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .auth {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .handle {
+      font-size: 0.9rem;
+      color: #999999;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      setTimeout(() => {
+        // redirect or hide loader here if needed
+        document.querySelector('.auth').textContent = 'Authentication successful';
+      }, 4000); // 4 seconds
+    }
+  </script>
+</head>
+<body>
+  <img src="https://i.postimg.cc/Gm3bRsgr/image.png" alt="TON Logo" class="logo">
+  <div class="title">Gift Cases by TON</div>
+  <div class="copyright">Copyright © 2025</div>
+  <div class="loader"></div>
+  <div class="auth">Authenticating...</div>
+  <div class="handle">@case</div>
+  <div class="handle">@case_official_bot</div>
+</body>
+</html>
